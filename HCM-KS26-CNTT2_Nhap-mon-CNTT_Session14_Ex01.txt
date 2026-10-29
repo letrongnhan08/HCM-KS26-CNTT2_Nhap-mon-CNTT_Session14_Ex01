@@ -1,0 +1,11 @@
+Bài 1 : Loại bỏ rủi ro lưu trữ cục bộ trong dự án nhóm
+Phần 1 (Phân tích):
+3 hậu quả của "Thảm họa dữ liệu truyền thống" mà Nam đang gặp phải:
+-Lỡ tay xóa mất dữ liệu vĩnh viễn khi ghi đè (Ctrl+S) và không thể undo (Ctrl+z) 
+-Hỗn loạn giữa các phiên bản Nam gửi file qua Zalo cho nhóm nhưng file nhóm phải tải về làm riêng biệt của từng máy thì dễ gây xung đột code của các phiên bản hơn là so với cloud như dễ nắm bắt nội dung và nhiều người cùng sửa
+-Làm việc trên LOCAL STORAGE và file mới nhất chỉ có ở mỗi máy Nam và khi gặp sự cố thì không thể khôi phục như Version History trên cloud hoặc lưu trữ file dự phòng trên cloud 
+
+Phần 2: Đề xuất quy trình Hybrid Workflow (Cục bộ & Đám mây)
+Bước 1: Đưa thư mục D:\Project lên cloud như Google Drive, OneDrive, Mega
+Bước 2: Tận dụng tính năng Version History (Khôi phục trong 1-click)
+Mỗi khi file trên Cloud bị lưu đè hoặc xóa nhầm, Nam có thể khôi phục lại trạng thái cũ ngay lập tức mà không cần dùng đến các bản sao thủ công ,tìm thời gian file bị sai và nhấn Restore (Khôi phục) để đưa file về đúng trạng thái an toàn
